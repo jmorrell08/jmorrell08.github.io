@@ -24,6 +24,13 @@
 				questionValueID = questionID.replace("question", "questionValue");
 				$('#' + questionValueID).show();
 			});
+			
+			$('.realCategory').click(function(){
+				var realCategoryID = $(this).attr('id');
+				$('#' + realCategoryID).hide();
+				var fakeQuestionID = realCategoryID.replace("real", "fake");
+				$('#' + fakeQuestionID).show();
+			});
 
 		});
 
