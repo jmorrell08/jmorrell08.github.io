@@ -27,9 +27,11 @@
 			
 			$('.realCategory').click(function(){
 				var realCategoryID = $(this).attr('id');
+				alert(realCategoryID);
 				$('#' + realCategoryID).hide();
-				var fakeQuestionID = realCategoryID.replace("real", "fake");
-				$('#' + fakeQuestionID).show();
+				var fakeCategoryID = realCategoryID.replace("real", "fake");
+				alert(fakeCategoryID);
+				$('#' + fakeCategoryID).show();
 			});
 
 		});
