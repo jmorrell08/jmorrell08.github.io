@@ -27,10 +27,8 @@
 			
 			$('.realCategory').click(function(){
 				var realCategoryID = $(this).attr('id');
-				alert(realCategoryID);
 				$('#' + realCategoryID).hide();
 				var fakeCategoryID = realCategoryID.replace("real", "fake");
-				alert(fakeCategoryID);
 				$('#' + fakeCategoryID).show();
 			});
 
