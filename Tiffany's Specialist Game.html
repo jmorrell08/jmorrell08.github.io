@@ -1,0 +1,130 @@
+<html>
+
+<head>
+	<script src="jquery-3.6.0.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$('.question').hide();
+
+			$('.questionValue').click(function(){
+
+				var questionValueID = $(this).attr('id');
+				$("#" + questionValueID).hide();
+				questionID = questionValueID.replace("Value", "");
+				$('#' + questionID).show();
+			});
+
+			$('.question').click(function(){
+
+				var questionID = $(this).attr('id');
+				$("#" + questionID).hide();
+				questionValueID = questionID.replace("question", "questionValue");
+				$('#' + questionValueID).show();
+			});
+
+		});
+
+	</script>
+	<style>
+		.questionValue {
+			width: 150px;
+			height:  100px;
+			padding-top: 22px;
+		}
+		.question {
+			width:  150px;
+			height: 100px;
+		}
+		td {
+			border: 1px solid black;
+			text-align: center;
+		}
+		#gameTable{
+			margin-left:  auto;
+			margin-right: auto;
+			margin-top: 200px;
+		}
+		h1 {
+			width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+	<title>
+		Tiffany's Specialist Game!!!!!
+	</title>
+</head>
+
+<body>
+
+	<h1>Tiffany's Specialist Game!!!!</h1>
+	
+	<table id="gameTable">
+		<tr>
+			<th>Teachable Moments</th>
+			<th>Did That Really Happen?</th>
+			<th>Inter Office Relationships</th>
+			<th>Story Time</th>
+		</tr>
+		<tr>
+			<td>
+				<div id="questionValue1" class="questionValue">$100</div>
+				<div id="question1" class="question">A standout moment when I was training or talking to an operator or coworker was:</div>
+			</td>
+			<td>
+				<div id="questionValue2" class="questionValue">$100</div>
+				<div id="question2" class="question">The most fun I had at a site visit/inspection was:</div>
+			</td>
+			<td>
+				<div id="questionValue3" class="questionValue">$100</div>
+				<div id="question3" class="question">A favorite thing about working in the Abingdon Field Office is:</div>
+			</td>
+			<td>
+				<div id="questionValue4" class="questionValue">$100</div>
+				<div id="question4" class="question">What is the wildest story you heard from an operator/waterworks?</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="questionValue5" class="questionValue">$200</div>
+				<div id="question5" class="question">The most memorable moment from when I was training was:</div>
+			</td>
+			<td>
+				<div id="questionValue6" class="questionValue">$200</div>
+				<div id="question6" class="question">The most outrageous thing I saw at a site visit/inspection was:</div>
+			</td>
+			<td>
+				<div id="questionValue7" class="questionValue">$200</div>
+				<div id="question7" class="question">What will you miss most about working with Wendy?</div>
+			</td>
+			<td>
+				<div id="questionValue8" class="questionValue">$200</div>
+				<div id="question8" class="question">What is the most outrageous tale you heard from a coworker?</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="questionValue9" class="questionValue">$300</div>
+				<div id="question9" class="question">The one thing I will surely never forget is:</div>
+			</td>
+			<td>
+				<div id="questionValue10" class="questionValue">$300</div>
+				<div id="question10" class="question">The most teachable opportunity I seized during an inspection was:</div>
+			</td>
+			<td>
+				<div id="questionValue11" class="questionValue">$300</div>
+				<div id="question11" class="question">How does working in AFO compare to your previous jobs?</div>
+			</td>
+			<td>
+				<div id="questionValue12" class="questionValue">$300</div>
+				<div id="question12" class="question">Wild Card! Tell any story!</div>
+			</td>
+		</tr>
+
+	</table>
+
+</body>
+
+</html>
