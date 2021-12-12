@@ -31,6 +31,13 @@
 				var fakeCategoryID = realCategoryID.replace("real", "fake");
 				$('#' + fakeCategoryID).show();
 			});
+			
+			$('.fakeCategory').click(function(){
+				var fakeCategoryID = $(this).attr('id');
+				$('#' + fakeCategoryID).hide();
+				var realCategoryID = fakeCategoryID.replace("fake", "real");
+				$('#' + realCategoryID).show();
+			});
 
 		});
 
